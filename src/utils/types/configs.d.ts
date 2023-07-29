@@ -5,9 +5,7 @@ type GeneralConfigType = {
     defaultLocale: import('@i18n').Locales
     ownerId: string
     timezone: string
-    automaticUploadImagesToImgur: boolean
     
-    simpleCommandsPrefix: string
     automaticDeferring: boolean
 
     links: {
@@ -17,17 +15,6 @@ type GeneralConfigType = {
 	}
 
     devs: string[]
-
-    eval: {
-        name: string
-        onlyOwner: boolean
-    }
-
-    activities: {
-        text: string
-        type: "PLAYING" | "STREAMING" | "LISTENING" | "WATCHING" | "CUSTOM" | "COMPETING"
-    }[]
-
 }
 
 type DatabaseConfigType = {

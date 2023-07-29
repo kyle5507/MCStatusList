@@ -37,6 +37,9 @@
 			"@utils/functions": ["src/utils/functions"],
 			"@utils/functions/*": ["src/plugins/*/utils/functions"],
 
+			"@utils/packages": ["src/utils/packages"],
+			"@utils/packages/*": ["src/plugins/*/utils/packages"],
+
 			"@api/controllers": ["src/api/controllers"],
 			"@api/controllers/*": ["src/plugins/*/api/controllers"],
 

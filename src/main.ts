@@ -77,12 +77,6 @@ async function run() {
                     const webSocket = await resolveDependency(WebSocket)
                     await webSocket.init(client.user?.id || null)
                 }
-
-                // upload images to imgur if configured
-                if (process.env.IMGUR_CLIENT_ID && generalConfig.automaticUploadImagesToImgur) {
-                    const imagesUpload = await resolveDependency(ImagesUpload)
-                    await imagesUpload.syncWithDatabase()
-                }
         
                 const store = await container.resolve(Store)
                 store.select('ready').subscribe(async (ready) => {

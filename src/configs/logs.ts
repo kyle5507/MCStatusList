@@ -10,7 +10,7 @@ export const logsConfig: LogsConfigType = {
     interaction: {
         file: true,
         console: true,
-        channel: null,
+        channel: '1118597998675505342',
 
         // exclude some interactions types
         exclude: [
@@ -22,7 +22,7 @@ export const logsConfig: LogsConfigType = {
     simpleCommand: {
         file: true,
         console: true,
-        channel: null
+        channel: '1118597998675505342'
     },
 
     newUser: {
@@ -34,12 +34,12 @@ export const logsConfig: LogsConfigType = {
     guild: {
         file: true,
         console: true,
-        channel: null
+        channel: '1118597998675505342'
     },
     
     error: {
         file: true,
         console: true,
-        channel: null
+        channel: '1118597998675505342'
     }
 }
